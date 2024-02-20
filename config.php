@@ -7,7 +7,7 @@ define('DB_PASSWORD', '0178Alexismax');
 define('DB_NAME', 'demo');
 define('DB_PORT','3306');
  
-/* Attempt to connect to MySQL database */
+/* Attempt to connect to MySQL databasete*/
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
  
 // Check connection
