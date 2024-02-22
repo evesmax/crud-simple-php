@@ -17,6 +17,9 @@
         table tr td:last-child a{
             margin-right: 15px;
         }
+        body{
+            background-color: #f0f0f0; 
+        }
     </style>
     <script type="text/javascript">
         $(document).ready(function(){
