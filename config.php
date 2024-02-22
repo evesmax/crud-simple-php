@@ -1,14 +1,15 @@
 <?php
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
+$db=$_SESSION['db'];
 define('DB_SERVER', '127.0.0.1');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '0178Alexismax');
-define('DB_NAME', 'demo');
+define('DB_NAME', $db);
 define('DB_PORT','3306');
- 
-/* Attempt to connect to MySQL databasete*/
-$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
+/* Attempt to connect to MySQL database */
+$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD,DB_NAME, DB_PORT);
  
 // Check connection
 if($link === false){

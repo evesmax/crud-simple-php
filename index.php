@@ -1,3 +1,20 @@
+<div class="page-header clearfix">
+<?php
+   session_start();
+   if (isset($_REQUEST["cmbdb"])) {
+        $db=$_REQUEST["cmbdb"];
+        $_SESSION["db"]=$db;
+   }else{
+        $db=$_SESSION["db"];
+   }
+   echo "Base de datos: ".$_SESSION["db"];
+
+
+?>
+<a href="menu.php" class="btn btn-success pull-right">Cambiar Base de datos</a>
+</div>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,10 +50,10 @@
                         <h2 class="pull-left">Empleados</h2>
                         <a href="create.php" class="btn btn-success pull-right">Agregar nuevo empleado</a>
                     </div>
+
                     <?php
                     // Include config file
                     require_once "config.php";
-                    
                     // Attempt select query execution
                     $sql = "SELECT * FROM employees";
                     if($result = mysqli_query($link, $sql)){
@@ -85,3 +102,4 @@
     </div>
 </body>
 </html>
+
