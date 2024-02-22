@@ -1,4 +1,5 @@
 <?php
+//borrar usuario
 // Process delete operation after confirmation
 if(isset($_POST["id"]) && !empty($_POST["id"])){
     // Include config file
