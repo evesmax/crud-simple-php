@@ -67,6 +67,13 @@
                                 }
                                 echo "</tbody>";                            
                             echo "</table>";
+                            echo "<table>";
+                            echo "<tr>";
+                            echo "<td>1</td>";
+                            echo "<td>2</td>";
+                            echo "<td>3</td>";
+                            echo "</tr>";
+                            echo "</table>";
                             // Free result set
                             mysqli_free_result($result);
                         } else{
