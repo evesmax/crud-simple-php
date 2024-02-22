@@ -1,5 +1,5 @@
 <?php
-// Process delete operation after confirmation
+// Process delete operation after confirmation //WOW
 if(isset($_POST["id"]) && !empty($_POST["id"])){
     // Include config file
     require_once "config.php";
