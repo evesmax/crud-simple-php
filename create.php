@@ -11,7 +11,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate name
     $input_name = trim($_POST["name"]);
     if(empty($input_name)){
-        $name_err = "Por favor ingrese el nombre del empleado nuevo.";
+        $name_err = "Por favor ingrese el nombre del empleado nuevo 1.";
     } elseif(!filter_var($input_name, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z\s]+$/")))){
         $name_err = "Por favor ingrese un nombre válido.";
     } else{
