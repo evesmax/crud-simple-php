@@ -1,5 +1,5 @@
 <?php
-/* Database credentials. Assuming you are running MySQL
+/* Database credentials. Assuming skldnlsnsn you are running MySQL
 server with default setting (user 'root' with no password) */
 $db=$_SESSION['db'];
 define('DB_SERVER', '127.0.0.1');
