@@ -1,6 +1,6 @@
 <?php
 // Include config file
-$db=$_SESSION["db"];
+session_start();
 require_once "config.php";
  
 // Define variables and initialize with empty values
