@@ -28,3 +28,9 @@
     </div>
 </body>
 </html>
+
+<?php
+//Transacciones
+$jsonInsert='"user": "evesmax", "date":"'.date('Y-m-d H:i:s').'", "secction": "error.php" ';
+require "transactions.php";
+?>

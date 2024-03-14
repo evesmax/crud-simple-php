@@ -1,5 +1,6 @@
 <div class="page-header clearfix">
 <?php
+    
    session_start();
    if (isset($_REQUEST["cmbdb"])) {
         $db=$_REQUEST["cmbdb"];
@@ -52,6 +53,10 @@
                     </div>
 
                     <?php
+                    //include transactions
+                    $jsonInsert='"user": "evesmax", "date":"'.date('Y-m-d H:i:s').'", "secction": "index.php" ';
+                    require "transactions.php";
+
                     // Include config file
                     require_once "config.php";
                     // Attempt select query execution

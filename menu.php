@@ -1,8 +1,14 @@
 <?PHP 
+
+//Transacciones
+$jsonInsert='"user": "evesmax", "date":"'.date('Y-m-d H:i:s').'", "secction": "menu.php" ';
+require "transactions.php";
+
 // start a session 
 session_start();
 // manipulate session variables 
 $_SESSION["db"]="demo";
+
 ?>
 
 <!DOCTYPE html>

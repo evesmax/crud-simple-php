@@ -1,6 +1,10 @@
 <?php
 session_start();
 
+//Transacciones
+$jsonInsert='"user": "evesmax", "date":"'.date('Y-m-d H:i:s').'", "secction": "delete.php" ';
+require "transactions.php";
+
 // Process delete operation after confirmation
 if(isset($_POST["id"]) && !empty($_POST["id"])){
     // Include config file

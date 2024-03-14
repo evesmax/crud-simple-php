@@ -2,6 +2,10 @@
 // Include config file
 session_start();
 require_once "config.php";
+
+//Transacciones
+$jsonInsert='"user": "evesmax", "date":"'.date('Y-m-d H:i:s').'", "secction": "update.php" ';
+require "transactions.php";
  
 // Define variables and initialize with empty values
 $name = $address = $salary = "";

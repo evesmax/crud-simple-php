@@ -1,6 +1,10 @@
 <?php
 session_start();
 
+//Transacciones
+$jsonInsert='"user": "evesmax", "date":"'.date('Y-m-d H:i:s').'", "secction": "read.php" ';
+require "transactions.php";
+
 // Check existence of id parameter before processing further
 if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 
